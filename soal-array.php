@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Array</title>
+    <title>Array PHP</title>
 </head>
-
 <body>
-    <h1>Berlatih Array</h1>
-
-    <?php
-    echo "<h3> Soal 1 </h3>";
+    <h1>Berlatih Array PHP</h1>
+    <?php   
+        echo "<h3> Soal 1 </h3>";
     /* 
             SOAL NO 1
             Kelompokkan nama-nama di bawah ini ke dalam Array.
@@ -20,27 +17,38 @@
             Adults: "Hopper", "Nancy",  "Joyce", "Jonathan", "Murray"
         */
     $kids = array("Mike", "Dustin", "Will", "Lucas", "Max", "Eleven"); // Lengkapi di sini
-    $adults;
+    echo "Kids : " . $kids[0] . ", " . $kids[1] . ", " . $kids[2] . ", " . $kids[3] .  ", " . $kids[4] . ", " . $kids[5] . ".";
+    echo "<br>";
+    $adults = array("Hopper", "Nancy",  "Joyce", "Jonathan", "Murray");
+    echo "Adults : " . $adults[0] . ", " . $adults[1] . ", " . $adults[2] . ", " . $adults[3] . ", " . $adults[4] . "."  ;
+
     echo "<h3> Soal 2</h3>";
     /* 
             SOAL NO 2
             Tunjukkan panjang Array di Soal No 1 dan tampilkan isi dari masing-masing Array.
         */
     echo "Cast Stranger Things: ";
-    echo "<br>";
+    echo "<br>" ; 
     echo "Total Kids: " . count($kids); // Berapa panjang array kids
-    echo "<br>";
-    echo "<ol>";
+    echo "<br>" ;
+    echo "<ol>" ;
     echo "<li> $kids[0] </li>";
-    // Lanjutkan
+    echo "<li> $kids[1] </li>";
+    echo "<li> $kids[2] </li>";
+    echo "<li> $kids[3] </li>";
+    echo "<li> $kids[4] </li>";
+    echo "<li> $kids[5] </li>";
 
     echo "</ol>";
 
-    echo "Total Adults: "; // Berapa panjang array adults
+    echo "Total Adults: " .count($adults); 
     echo "<br>";
     echo "<ol>";
     echo "<li> $adults[0] </li>";
-    // Lanjutkan
+    echo "<li> $adults[1] </li>";
+    echo "<li> $adults[2] </li>";
+    echo "<li> $adults[3] </li>";
+    echo "<li> $adults[4] </li>";
 
     echo "</ol>";
 
@@ -107,7 +115,25 @@
                 )
             
         */
+        echo "<h3> Soal 3</h3>";
+         $Aktor = array(
+ 
+ array('Name' => array('Will Byers'), 'Age' => array('12'), 'Aliases' => array('Will The Wise'), 'Status' => array('Alive')),
+ array('Name' => array('Mike Wheeler'), 'Age' => array('12'), 'Aliases' => array('Dugeon Master'), 'Status' => array('Alive')),
+ array('Name' => array('Jim Hooper'), 'Age' => array('43'), 'Aliases' => array('Chief Hopper'), 'Status' => array('Deceased')),
+ array('Name' => array('Eleven'), 'Age' => array('12'), 'Aliases' => array('El'), 'Status' => array('Alive')),
+ 
+);
+//untuk menampilkannya
+foreach($Aktor as $name => $data){
+ echo $name . '<br/>';
+ foreach($data as $name2 => $value){
+ echo $name2 . ': ' . $value[0] .'<br> ';
+ }
+ echo '<br/>';
+}
+
+
     ?>
 </body>
-
 </html>
