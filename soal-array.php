@@ -41,7 +41,7 @@
 
     echo "</ol>";
 
-    echo "Total Adults: " .count($adults); 
+    echo "Total Adults: " . count($adults); 
     echo "<br>";
     echo "<ol>";
     echo "<li> $adults[0] </li>";
@@ -115,23 +115,33 @@
                 )
             
         */
-        echo "<h3> Soal 3</h3>";
-         $Aktor = array(
- 
- array('Name' => array('Will Byers'), 'Age' => array('12'), 'Aliases' => array('Will The Wise'), 'Status' => array('Alive')),
- array('Name' => array('Mike Wheeler'), 'Age' => array('12'), 'Aliases' => array('Dugeon Master'), 'Status' => array('Alive')),
- array('Name' => array('Jim Hooper'), 'Age' => array('43'), 'Aliases' => array('Chief Hopper'), 'Status' => array('Deceased')),
- array('Name' => array('Eleven'), 'Age' => array('12'), 'Aliases' => array('El'), 'Status' => array('Alive')),
- 
-);
-//untuk menampilkannya
-foreach($Aktor as $name => $data){
- echo $name . '<br/>';
- foreach($data as $name2 => $value){
- echo $name2 . ': ' . $value[0] .'<br> ';
- }
- echo '<br/>';
-}
+        echo "<h3> Soal 3</h3>";  
+        $aktor = array(
+        //data data untuk array    
+			array( "Name"=>"Will Byers", 
+					"Age"=>"12",
+					"Aliases"=>"Will the Wise",
+                    "Status"=>"Alive"),
+
+			array( "Name"=>"Mike Wheeler", 
+					"Age"=>"12",
+					"Aliases"=>"Dugeon Master",
+                    "Status"=>"Alive"),
+
+			array( "Name"=>"Jim Hooper", 
+					"Age"=>"43",
+					"Aliases"=>"Chief Hopper",
+                    "Status"=>"Deceased"),
+
+			array( "Name"=>"Eleven", 
+					"Age"=>"12",
+					"Aliases"=>"El",
+                    "Status"=>"Alive")
+
+		);
+
+/* tampilkan variabel array */
+echo '<pre>'; print_r($penulis); echo '</pre>';
 
 
     ?>
