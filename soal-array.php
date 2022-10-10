@@ -141,7 +141,7 @@
 		);
 
 /* tampilkan variabel array */
-echo '<pre>'; print_r($penulis); echo '</pre>';
+echo '<pre>'; print_r($aktor); echo '</pre>';
 
 
     ?>
